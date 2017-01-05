@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Spencer Scarpelli</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+  </head>
+  <body>
+    <div class="banner bg1">
+      <a href="index.html">
+        <header>SPENCER SCARPELLI</header>
+      </a>
+      <div class="nav-box">
+        <a href="resume.html">
+          <div class="banner-nav-tab text3">
+            RESUME
+          </div>
+        </a>
+        <a href="projects.html">
+          <div class="banner-nav-tab text3">
+            PROJECTS
+          </div>
+        </a>
+        <a href="contact.html">
+          <div class="banner-nav-tab text3">
+            CONTACT
+          </div>
+        </a>
+      </div>
+      <div class="svg-container">
+        <div class="svg-box">
+          <a href="https://github.com/spencerscarpelli" target="_blank">
+            <embed type="image/svg+xml" src="assets/svg/github-logo.svg" width="40" height="40">
+          </a>
+        </div>
+        <div class="svg-box">
+          <a href="https://www.linkedin.com/in/spencer-scarpelli-91790b53" target="_blank">
+            <embed type="image/svg+xml" src="assets/svg/linkedin.svg" width="40" height="40">
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="resume">
+        <h2 class="text2">Skills</h2>
+        <section class="skills-col">
+          <ul>
+            <li>JavaScript</li>
+            <li>Node.js</li>
+            <li>Angular</li>
+            <li>Express.js</li>
+          </ul>
+        </section>
+        <section class="skills-col">
+          <ul>
+            <li>jQuery</li>
+            <li>AJAX</li>
+            <li>HTML, CSS</li>
+            <li>SQL, PostgreSQL, Knex</li>
+          </ul>
+        </section>
+        <section class="skills-col">
+          <ul>
+            <li>C#</li>
+            <li>Object-oriented programming</li>
+            <li>Agile workflow</li>
+            <li>Pair programming</li>
+          </ul>
+        </section>
+        <h2 class="text2">Experience</h2>
+        <h4>Microsoft<span class="regular-text"> | <i>Software Development Intern</i> | Redmond, WA | June 2016 - October 2016</span></h4>
+        <ul>
+          <li>Utilized agile development to maintain and improve backend services for Xbox gaming telemetry</li>
+          <li>Designed and implemented functional tests for high-throughput applications</li>
+          <li>Streamlined a suite of learning materials for future interns and third-world programming academies</li>
+          <li>Learned technologies such as C#, Azure Event Hubs, and Linux virtual machines</li>
+        </ul>
+        <h4>Galvanize<span class="regular-text"> | <i>Full-Stack Web Development Resident</i> | Seattle, WA | February 2016 - June 2016</span></h4>
+        <ul>
+          <li>
+            Twitter Sentiment Analysis
+            <ul>
+              <li>Worked on a team of four to build and deploy an Express CRUD application</li>
+              <li>Built RESTful routes using Knex to access PostgreSQL database and render HTML with
+                Jade templates</li>
+            </ul>
+          </li>
+          <li>
+            <i>SommBuddy</i> Wine-Pairing Mobile Application
+            <ul>
+              <li>Worked on a team of four to design and build a mobile application for pairing wine with food</li>
+              <li>Built a backend reverse proxy, calling wine.com API with request-promise, then restructuring before sending JSON response to client</li>
+              <li>Implemented a web crawler to get image urls</li>
+            </ul>
+          </li>
+          <li>
+            Text Converter
+            <ul>
+              <li>Structured and styled a front-end application to convert text into synonyms</li>
+              <li>Used AJAX to call thesaurus API, based on front-end word-parsing logic</li>
+            </ul>
+          </li>
+          <li>
+            Angular Shopping Cart
+            <ul>
+              <li>Used Angular to build front-end shopping cart application</li>
+            </ul>
+          </li>
+        </ul>
+        <h4>Wells Fargo<span class="regular-text"> | <i>Financial Analyst</i> | Spokane, WA and Seattle, WA | January 2013 - December 2015</span></h4>
+        <ul>
+          <li>Advised business clients on cash flow management, information reporting, and fraud protection</li>
+          <li>Assisted two investment managers with portfolio allocation and rebalancing</li>
+        </ul>
+        <h4>Hypergiant Media<span class="regular-text"> | <i>Composer</i> | Seattle, WA | April 2011 - June 2012</span></h4>
+        <ul>
+          <li>Started a music publishing business focused on music for productions</li>
+          <li>Composed music for advertisements, television, film, and various licensing opportunities</li>
+        </ul>
+        <h2 class="text2">Education</h2>
+        <h4>University of Washington<span class="regular-text"> | Seattle, WA | Graduated December 2010</span></h4>
+        <h4><span class="regular-text"><i>Bachelor of Arts in Business Administration, specializing in finance and economics</i></span></h4>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <p>Copyright &copy; <span id="current-year"></span> Spencer Scarpelli</p>
+      <p>
+        GitHub logo formatted in SVG by <a href="http://www.flaticon.com/authors/dave-gandy" target="_blank" class="link">Dave Gandy</a> from Flaticon
+      </p>
+      <p>
+        LinkedIn logo formatted in SVG by <a href="http://www.flaticon.com/authors/freepik" target="_blank" class="link">Freepik</a> from Flaticon
+      </p>
+    </footer>
+
+  </body>
+  <script type="text/javascript" src="script.js"></script>
+  <script type="text/javascript">
+    let year = document.getElementById('current-year');
+    let date = new Date();
+    year.innerText = date.getFullYear();
+  </script>
+</html>
