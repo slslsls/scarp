@@ -155,8 +155,22 @@ footer > p {
   }
 }
 
-@media all and (max-width: 600px) {
+@media all and (max-width: 520px) {
   .svg-box {
     display: none;
+  }
+}
+
+@media all and (max-width: 465px) {
+  .nav-box {
+    margin-left: 5%;
+  }
+
+  .banner-nav-tab {
+    width: 7rem;
+  }
+
+  header {
+    margin-left: 5%;
   }
 }
