@@ -1,12 +1,12 @@
 (function() {
   'use strict';
 
-  var $project = $('#project-scarp');
+  $('.project').on('click', e => {
+    let parentId = e.target.parentElement.id;
+    let $target = $('#' + parentId);
 
-  $project.on('click', e => {
-    // console.log(e);
-    // e.target.parentNode.append('<h1>Hi</h1>');
-    $project.append('<h1>Hi</h1>')
+    $('#displayed-project').remove();
+    $target.append('<embed id="displayed-project" src="./project-views/' + parentId + '.html">');
   });
 
 
