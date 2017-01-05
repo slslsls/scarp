@@ -143,7 +143,7 @@ footer > p {
   }
 }
 
-@media all and (max-width: 630px) {
+@media all and (max-width: 800px) {
   .svg-container {
     top: 1px;
     margin-right: 20px;
@@ -152,5 +152,11 @@ footer > p {
   .svg-box {
     display: block;
     margin: .7rem;
+  }
+}
+
+@media all and (max-width: 600px) {
+  .svg-box {
+    display: none;
   }
 }
