@@ -1,11 +1,13 @@
 (function() {
   'use strict';
 
-  var whoa = document.getElementById('whoa');
+  var $project = $('#project-scarp');
 
-  whoa.onclick = e => {
-    console.log(e.target.id);
-  }
+  $project.on('click', e => {
+    // console.log(e);
+    // e.target.parentNode.append('<h1>Hi</h1>');
+    $project.append('<h1>Hi</h1>')
+  });
 
 
 })();

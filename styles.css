@@ -157,6 +157,10 @@ footer > p {
   padding-left: 10px;
 }
 
+.project:hover {
+  cursor: pointer;
+}
+
 .project h2 {
   letter-spacing: 1.5px;
   font-family: 'Raleway', sans-serif;
