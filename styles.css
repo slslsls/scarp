@@ -142,6 +142,26 @@ footer > p {
   margin-top: 10px;
 }
 
+.projects-container {
+  width: 60%;
+  margin: auto;
+  padding-bottom: 30px;
+  margin-top: 50px;
+  border-top: 1px solid lightgray;
+}
+
+.project {
+  border-bottom: 1px solid lightgray;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+}
+
+.project h2 {
+  letter-spacing: 1.5px;
+  font-family: 'Raleway', sans-serif;
+}
+
 .text1 {
   color: #558A86;
 }
