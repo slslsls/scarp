@@ -154,6 +154,14 @@ footer > p {
   margin-top: 10px;
 }
 
+.projects-intro {
+  width: 70%;
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
 .projects-container {
   width: 70%;
   margin: auto;
@@ -240,10 +248,13 @@ footer > p {
 }
 
 .contact-info h1 {
-  font-family: 'Raleway', sans-serif;
-  letter-spacing: 1.5px;
   margin-top: 20px;
   margin-bottom: 30px;
+}
+
+.contact-info a {
+  font-family: 'Raleway', sans-serif;
+  letter-spacing: 1.5px;
 }
 
 .text1 {
