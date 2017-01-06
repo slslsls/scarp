@@ -260,6 +260,62 @@ footer > p {
   letter-spacing: 1px;
 }
 
+.input-field {
+  display: block;
+  height: 30px;
+  width: 500px;
+  border-radius: 5px;
+  border: 1px solid lightgray;
+  margin: auto;
+  margin-bottom: 20px;
+  padding-left: 7px;
+}
+
+.input-message {
+  height: 200px;
+  width: 500px;
+  display: block;
+  border-radius: 5px;
+  border: 1px solid lightgray;
+  margin: auto;
+  margin-bottom: 30px;
+  padding-top: 7px;
+  padding-left: 7px;
+}
+
+::-webkit-input-placeholder {
+  font-size: .8rem;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+  font-size: .8rem;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+  font-size: .8rem;
+}
+
+:-ms-input-placeholder {
+  font-size: .8rem;
+}
+
+.button {
+  height: 30px;
+  width: 100px;
+  font-size: 1rem;
+  border-radius: 5px;
+  background-color: #A63E14;
+  font-family: 'Raleway', sans-serif;
+  border: none;
+  color: white;
+  letter-spacing: 1.5px;
+  text-align: center;
+}
+
+.button:hover {
+  cursor: pointer;
+}
+
 .contact-info p {
   font-family: 'Raleway', sans-serif;
   letter-spacing: 1px;
