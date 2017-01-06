@@ -82,6 +82,12 @@ header {
   min-width: 500px;
 }
 
+.opening {
+  font-size: 1.3rem;
+  font-family: 'Raleway', sans-serif;
+  letter-spacing: 1px;
+}
+
 .final-paragraph {
   margin-top: 30px;
 }
@@ -160,6 +166,11 @@ footer > p {
   margin-top: 50px;
   margin-bottom: 30px;
   text-align: center;
+}
+
+.projects-intro p {
+  font-family: 'Raleway', sans-serif;
+  letter-spacing: 1px;
 }
 
 .projects-container {
@@ -245,6 +256,13 @@ footer > p {
   padding-bottom: 200px;
   text-align: center;
   border-bottom: 1px solid lightgray;
+  font-family: 'Raleway', sans-serif;
+  letter-spacing: 1px;
+}
+
+.contact-info p {
+  font-family: 'Raleway', sans-serif;
+  letter-spacing: 1px;
 }
 
 .contact-info h1 {
