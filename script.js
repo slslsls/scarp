@@ -1,13 +1,16 @@
 (function() {
   'use strict';
 
+  var $projects = $('.project-detail');
+
   $('.project').on('click', e => {
-    let parentId = e.target.parentElement.id;
-    let $target = $('#' + parentId);
+    let targetId = e.target.parentElement.id;
+    let $targetProject = $('#detail-' + targetId.slice(8));
 
-    $('#displayed-project').remove();
-    $target.append('<embed id="displayed-project" src="./project-views/' + parentId + '.html">');
+    if ($targetProject[0].style.height != 0 && $targetProject[0].style.height != '0px') {
+      $targetProject[0].style.height = '0px';
+    } else {
+      $targetProject[0].style.height = 'auto';
+    }
   });
-
-
 })();

@@ -20,7 +20,7 @@
           </div>
         </a>
         <a href="projects.html">
-          <div class="banner-nav-tab text3">
+          <div class="banner-nav-tab highlighted">
             PROJECTS
           </div>
         </a>
@@ -44,12 +44,161 @@
       </div>
     </div>
     <div class="projects-container">
+
       <div id="project-scarp" class="project">
         <h2 class="text2">scarp.io</h2>
+        <div id="detail-scarp" class="project-detail">
+          <section class="display-section">
+            <div class="display-detail">
+              <a href="https://github.com/spencerscarpelli/scarp" target="_blank">
+                <img class="github-repo-link" src="./assets/images/github-logo.png" alt="GitHub logo">
+              </a>
+              <br/>
+              <strong class="text3">Description</strong>
+              <p>
+                Yes, this website! Very meta. Its a work in progress, and probably always will be. In addition to showcasing some projects and hosting blog posts, I figured it would be good to work with Angular 2 and learn some new stuff.
+              </p>
+              <strong class="text3">Technologies Used</strong>
+              <p>
+                Angular, Angular CLI, TypeScript, SVG, HTML, CSS
+              </p>
+              <img src="./assets/images/ss-1.png" class="screenshot" alt="A screenshot of an application" />
+            </div>
+          </section>
+        </div>
       </div>
+
+      <div id="project-8k-crawler" class="project">
+        <h2 class="text2">8-K Crawler</h2>
+        <div id="detail-8k-crawler" class="project-detail">
+          <section class="display-section">
+            <div class="display-detail">
+              <a href="https://github.com/spencerscarpelli/filings-crawler" target="_blank">
+                <img class="github-repo-link" src="./assets/images/github-logo.png" alt="GitHub logo">
+              </a>
+              <br/>
+              <strong class="text3">Description</strong>
+              <p>
+                A Python crawler that parses SEC filings of various companies. Hundreds of 8-K (current report) documents are filed with the SEC every day, but I\'m only interested in the ones that contain the topic of "Other Events". Going through all the 8-Ks and checking for this topic is time-consuming and involves a lot of clicks, so I built a command line program that crawls the financial statements database, finds the right filings, proceeds to their content, and presents them to me on new browser tabs. The program uses a simple file read/write (not the most robust system but it does the job for the scale of this program) to track which filing was last viewed, so as the database gets new filings throughout the day, the user can check periodically and only get the filings they haven\'t seen yet.
+              </p>
+              <strong class="text3">Technologies Used</strong>
+              <p>
+                Python, BeautifulSoup
+              </p>
+              <img src="./assets/images/8k-crawler-1.png" class="screenshot" alt="A screenshot of an application" />
+              <img src="./assets/images/8k-crawler-2.png" class="screenshot" alt="A screenshot of an application" />
+            </div>
+          </section>
+        </div>
+      </div>
+
+      <div id="project-sommbuddy" class="project">
+        <h2 class="text2">SommBuddy</h2>
+        <div id="detail-sommbuddy" class="project-detail">
+          <section class="display-section">
+            <div class="display-detail">
+              <a href="https://github.com/discoverychannel/sommbuddy-server" target="_blank">
+                <img class="github-repo-link" src="./assets/images/github-logo.png" alt="GitHub logo">
+              </a>
+              <br/>
+              <strong class="text3">Description</strong>
+              <p>
+                A group project at Galvanize, this is a wine-pairing mobile application that takes several input parameters from the user such as meal type, preferred flavor profile, and price range, then returns three new wines that fit those characteristics. Users can save a wine to a favorites list. After the planning and architecture phase of the project, my main role was setting up the intermediate API that received the initial user input. This service took the wine.com API results and applied further filtering and object restructuring, crawled the image URL\'s page for the actual wine bottle image (the response object included only a picture of the label or a URL to a page with the picture of the bottle), and sent the final response back to the client application.
+              </p>
+              <strong class="text3">Technologies Used</strong>
+              <p>
+                Node.js, Ionic, Angular, wine.com API
+              </p>
+              <img src="./assets/images/sommbuddy-1.png" class="screenshot" alt="A screenshot of an application" />
+              <img src="./assets/images/sommbuddy-2.png" class="screenshot" alt="A screenshot of an application" />
+              <img src="./assets/images/sommbuddy-3.png" class="screenshot" alt="A screenshot of an application" />
+              <img src="./assets/images/sommbuddy-4.png" class="screenshot" alt="A screenshot of an application" />
+              <img src="./assets/images/sommbuddy-5.png" class="screenshot" alt="A screenshot of an application" />
+              <img src="./assets/images/sommbuddy-6.png" class="screenshot" alt="A screenshot of an application" />
+            </div>
+          </section>
+        </div>
+      </div>
+
+      <div id="project-angular-shopping-cart" class="project">
+        <h2 class="text2">Angular Shopping Cart</h2>
+        <div id="detail-angular-shopping-cart" class="project-detail">
+          <section class="display-section">
+            <div class="display-detail">
+              <a href="https://github.com/spencerscarpelli/angular-shopping-cart-app" target="_blank">
+                <img class="github-repo-link" src="./assets/images/github-logo.png" alt="GitHub logo">
+              </a>
+              <br/>
+              <strong class="text3">Description</strong>
+              <p>
+                An AngularJS 1 exercise, the goal was to build a single-page shopping cart application with a shared service across components. Users can use filter/search options to find the desired product, then add a certain quantity to their shopping bag and proceed to the checkout view, which displays the order total and each item with quantity and subtotal. They can then remove or edit the quantity of each item in their shopping cart.
+              </p>
+              <strong class="text3">Technologies Used</strong>
+              <p>
+                JavaScript, Angular, JSON, HTML, CSS
+              </p>
+              <img src="./assets/images/shopping-cart-1.png" class="screenshot" alt="A screenshot of an application" />
+              <img src="./assets/images/shopping-cart-2.png" class="screenshot" alt="A screenshot of an application" />
+              <img src="./assets/images/shopping-cart-3.png" class="screenshot" alt="A screenshot of an application" />
+              <img src="./assets/images/shopping-cart-4.png" class="screenshot" alt="A screenshot of an application" />
+            </div>
+          </section>
+        </div>
+      </div>
+
+      <div id="project-twitter-sa" class="project">
+        <h2 class="text2">Twitter Sentiment Analysis</h2>
+        <div id="detail-twitter-sa" class="project-detail">
+          <section class="display-section">
+            <div class="display-detail">
+              <a href="https://github.com/spencerscarpelli/Twitter_Sentiment_Analysis" target="_blank">
+                <img class="github-repo-link" src="./assets/images/github-logo.png" alt="GitHub logo">
+              </a>
+              <br/>
+              <strong class="text3">Description</strong>
+              <p>
+                A web application that pulls tweets based on a user\'s hashtag search query. The tweets are given a score based on a sentiment analysis algorithm, and are visualized in charts. The user can hover over each node in the chart to read the tweet. The user can then save that search in a board to revisit later. The user can register in the application or with GitHub OAuth.
+              </p>
+              <strong class="text3">Technologies Used</strong>
+              <p>
+                Node.js, Express.js, Python, d3.js, PostgreSQL, Knex, Twitter API, Jade/Pug, Bootstrap
+              </p>
+              <img src="./assets/images/twitter-sa-1.png" class="screenshot" alt="A screenshot of an application" />
+              <img src="./assets/images/twitter-sa-2.png" class="screenshot" alt="A screenshot of an application" />
+              <img src="./assets/images/twitter-sa-3.png" class="screenshot" alt="A screenshot of an application" />
+              <img src="./assets/images/twitter-sa-4.png" class="screenshot" alt="A screenshot of an application" />
+            </div>
+          </section>
+        </div>
+      </div>
+
       <div id="project-in-other-words" class="project">
         <h2 class="text2">In Other Words</h2>
+        <div id="detail-in-other-words" class="project-detail">
+          <section class="display-section">
+            <div class="display-detail">
+              <a href="https://github.com/spencerscarpelli/in-other-words" target="_blank">
+                <img class="github-repo-link" src="./assets/images/github-logo.png" alt="GitHub logo">
+              </a>
+              <br/>
+              <strong class="text3">Description</strong>
+              <p>
+                A front-end web application that takes text and transforms it by replacing a portion of it with synonyms. The page has two text boxes, one for the source text and one for results. The results can be loaded back into the input box to reiterate the transformation. The logic takes the source text and breaks it into an array of strings, to be channeled into API requests. It then checks each API response for synonyms in the noun, adjective, verb, and adverb categories, in that order based on estimations of frequency in English academic prose. It then picks one of the resulting synonyms at random and places it into a new array of strings, to be joined and appended to the results box on the page.
+              </p>
+              <strong class="text3">Technologies Used</strong>
+              <p>
+                Javascript, jQuery, AJAX, JSON, Big Huge Labs Thesaurus API, HTML, CSS
+              </p>
+              <img src="./assets/images/in-other-words-1.png" class="screenshot" alt="A screenshot of an application" />
+              <img src="./assets/images/in-other-words-2.png" class="screenshot" alt="A screenshot of an application" />
+              <img src="./assets/images/in-other-words-3.png" class="screenshot" alt="A screenshot of an application" />
+              <img src="./assets/images/in-other-words-4.png" class="screenshot" alt="A screenshot of an application" />
+            </div>
+          </section>
+        </div>
+
       </div>
+
     </div>
     <footer class="footer">
       <p>Copyright &copy; <span id="current-year"></span> Spencer Scarpelli</p>
