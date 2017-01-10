@@ -1,3 +1,4 @@
+<h2 class="text2">8-K Crawler</h2>
 <div id="detail-8k-crawler" class="project-detail">
   <section class="display-section">
     <div class="display-detail">
@@ -7,13 +8,12 @@
       <br/>
       <strong class="text3">Description</strong>
       <p>
-        A Python crawler that parses SEC filings of various companies. Hundreds of 8-K (current report) documents are filed with the SEC every day, but I\'m only interested in the ones that contain the topic of "Other Events". Going through all the 8-Ks and checking for this topic is time-consuming and involves a lot of clicks, so I built a command line program that crawls the financial statements database, finds the right filings, proceeds to their content, and presents them to me on new browser tabs. The program uses a simple file read/write (not the most robust system but it does the job for the scale of this program) to track which filing was last viewed, so as the database gets new filings throughout the day, the user can check periodically and only get the filings they haven\'t seen yet.
+        A Python crawler that parses SEC filings of various companies. Hundreds of 8-K (current report) documents are filed with the SEC every day, but I'm only interested in the ones that contain the topic of "Other Events". Going through all the 8-Ks and checking for this topic is time-consuming and involves a lot of clicks, so I built a command line program that crawls the financial statements database, finds the right filings, proceeds to their content, and presents them to me on new browser tabs. The program uses a simple file read/write (not the most robust system but it does the job for the scale of this program) to track which filing was last viewed, so as the database gets new filings throughout the day, the user can check periodically and only get the filings they haven't seen yet.
       </p>
       <strong class="text3">Technologies Used</strong>
       <p>
         Python, BeautifulSoup
       </p>
-      <img src="./assets/images/8k-crawler-1.png" class="screenshot" alt="A screenshot of an application" />
       <img src="./assets/images/8k-crawler-2.png" class="screenshot" alt="A screenshot of an application" />
     </div>
   </section>
