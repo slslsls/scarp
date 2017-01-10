@@ -206,7 +206,7 @@ footer > p {
 }
 
 .project h2:hover {
-  background-color: #E5DFE4;
+  background-color: lightgray;
   transition: all .5s ease;
   cursor: pointer;
 }
