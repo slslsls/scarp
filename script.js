@@ -1,6 +1,10 @@
 (function() {
   'use strict';
 
+  var projectHeights = {
+    'twitter-sa': '1500px'
+  }
+
   $('.project').on('click', e => {
     let targetId = e.target.parentElement.id;
     let $targetProject = $('#detail-' + targetId.slice(8));
