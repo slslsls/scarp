@@ -16,7 +16,12 @@ p {
 .banner {
   height: 70px;
   width: 100%;
-  box-shadow: 0px 2px 12px gray;
+  box-shadow: 0px 5px 30px black;
+}
+
+.sub-banner {
+  height: 10px;
+  width: 100%;
 }
 
 header {
@@ -32,13 +37,15 @@ header {
 
 .nav-box {
   display: inline-block;
-  margin-left: 7%;
+  margin-left: 5%;
 }
 
 .banner-nav-tab {
   width: 10rem;
   letter-spacing: 1px;
   display: inline-block;
+  transition: color .2s;
+  text-align: center;
 }
 
 .banner-nav-tab:hover {
@@ -132,7 +139,7 @@ footer > p {
   width: 60%;
   margin: auto;
   padding-bottom: 30px;
-  margin-top: 50px;
+  margin-top: 60px;
   border-bottom: 1px solid lightgray;
 }
 
@@ -143,7 +150,7 @@ footer > p {
 .resume h1 {
   font-family: 'Raleway', sans-serif;
   letter-spacing: 2px;
-  margin-top: 30px;
+  margin-top: 60px;
 }
 
 .resume h2 {
@@ -163,7 +170,7 @@ footer > p {
 .projects-intro {
   width: 70%;
   margin: auto;
-  margin-top: 50px;
+  margin-top: 60px;
   margin-bottom: 30px;
   text-align: center;
 }
@@ -215,6 +222,7 @@ footer > p {
   height: 0px;
   overflow: hidden;
   padding-left: 5%;
+  transition: height .5s;
 }
 
 .screenshot {
@@ -363,7 +371,7 @@ footer > p {
   .nav-box {
     display: block;
     margin-top: 10px;
-    margin-left: 70px;
+    margin-left: 45px;
   }
 
   .banner-nav-tab {
@@ -391,7 +399,7 @@ footer > p {
 
 @media all and (max-width: 465px) {
   .nav-box {
-    margin-left: 10px;
+    margin-left: 5px;
   }
 
   .banner-nav-tab {

@@ -1,8 +1,6 @@
 (function() {
   'use strict';
 
-  var $projects = $('.project-detail');
-
   $('.project').on('click', e => {
     let targetId = e.target.parentElement.id;
     let $targetProject = $('#detail-' + targetId.slice(8));
