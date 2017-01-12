@@ -11,26 +11,21 @@
   </head>
   <body>
     <div class="banner bg3">
-      <a href="index.html">
+      <a href="#home-page">
         <header>SPENCER SCARPELLI</header>
       </a>
       <div class="nav-box">
-        <a href="#nav-about">
+        <a href="#about-page">
           <div class="banner-nav-tab">
             ABOUT
           </div>
         </a>
-        <a href="resume.html">
-          <div class="banner-nav-tab">
-            RESUME
-          </div>
-        </a>
-        <a href="projects.html">
+        <a href="#projects-page">
           <div class="banner-nav-tab">
             PROJECTS
           </div>
         </a>
-        <a href="contact.html">
+        <a href="#contact-page">
           <div class="banner-nav-tab">
             CONTACT
           </div>
@@ -49,18 +44,46 @@
         </div>
       </div>
     </div>
-    <div class="welcome-background">
-      <div class="welcome-frame">
-        <h1 class="heading text2">Hello World</h1>
-        <!-- <img src="./assets/images/hello-world.png" alt="hello world" style="height:50px; display:block; margin:auto"> -->
-        <div class="welcome-section">
-          <p>
-            <strong class="opening text3">I'm a full-stack web developer</strong> with experience in JavaScript, NodeJS, AngularJS, CSS, C#, and SQL. I love learning new concepts and solving problems in order to build things as part of a team.
-          </p>
+    <div id="home-page">
+      <div class="welcome-background">
+        <div class="welcome-frame">
+          <h1 class="heading text2">Hello World</h1>
+          <!-- <img src="./assets/images/hello-world.png" alt="hello world" style="height:50px; display:block; margin:auto"> -->
+          <div class="welcome-section">
+            <p>
+              <strong class="opening text3">I'm a full-stack web developer</strong> with experience in JavaScript, NodeJS, AngularJS, CSS, C#, and SQL. I love learning, working as part of a team, and thinking creatively to solve problems and build things.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="home-page-nav">
+        <div class="spacer">
+          <a href="#about-page">
+            <div class="home-page-nav-button bg3">
+              <h2 class="text2">About</h2>
+              <p>Background & resume</p>
+            </div>
+          </a>
+        </div>
+        <div class="spacer">
+          <a href="#projects-page">
+            <div class="home-page-nav-button bg3">
+              <h2 class="text2">Projects</h2>
+              <p>Descriptions & screenshots</p>
+            </div>
+          </a>
+        </div>
+        <div class="spacer">
+          <a href="#contact-page">
+            <div class="home-page-nav-button bg3">
+              <h2 class="text2">Contact</h2>
+              <p>Get in touch!</p>
+            </div>
+          </a>
         </div>
       </div>
     </div>
-    <div id="nav-about" class="about-section">
+    <div id="about-page" class="about-section">
       <h1 class="heading text2">About Me</h1>
       <p>
         <img src="./assets/images/profile-pic.png" alt="profile picture">

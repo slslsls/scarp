@@ -1,6 +1,7 @@
 * {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
 }
 
 a, a:hover, a:visited {
@@ -13,16 +14,27 @@ p {
   line-height: 1.5rem;
 }
 
+#home-page {
+  height: 1000px;
+}
+
+#about-page {
+  height: 1000px;
+}
+
+#projects-page {
+  height: 1000px;
+}
+
+#contact-page {
+  height: 1000px;
+}
+
 .banner {
   height: 70px;
   width: 100%;
   position: fixed;
-  /*box-shadow: 0px 5px 30px black;*/
-}
-
-.sub-banner {
-  height: 10px;
-  width: 100%;
+  z-index: 100;
 }
 
 header {
@@ -54,7 +66,6 @@ header {
 }
 
 .banner-nav-tab:hover {
-  /*color: #00335C;*/
   color: white;
 }
 
@@ -89,17 +100,18 @@ header {
 }
 
 .welcome-frame {
-  width: 55%;
-  min-width: 700px;
+  width: 50%;
+  min-width: 600px;
   margin: auto;
   padding: 40px 10px;
   padding-bottom: 60px;
   background-color: white;
   box-shadow: 0px 0px 30px black;
+  opacity: .9;
 }
 
 .welcome-section {
-  width: 75%;
+  width: 80%;
   margin: auto;
   margin-top: 30px;
   padding-top: 40px;
@@ -110,6 +122,46 @@ header {
 
 .welcome-section p {
   line-height: 1.7rem;
+  letter-spacing: .5px;
+}
+
+.home-page-nav {
+  width: 65%;
+  min-width: 900px;
+  margin: auto;
+  margin-top: 50px;
+  text-align: justify;
+}
+
+.spacer {
+  display: inline-block;
+  width: 33%;
+  padding: 0px;
+  margin: 0px;
+}
+
+.home-page-nav-button {
+  height: 100px;
+  width: 250px;
+  padding-top: 20px;
+  text-align: center;
+  vertical-align: top;
+  margin: 0;
+}
+
+.home-page-nav-button h2 {
+  font-family: 'Raleway', sans-serif;
+  margin-bottom: 10px;
+}
+
+.home-page-nav-button p {
+  letter-spacing: .5px;
+  color: gray;
+  transition: color .2s;
+}
+
+.home-page-nav-button p:hover {
+  color: white;
 }
 
 .opening {
@@ -408,7 +460,7 @@ footer > p {
   .nav-box {
     display: block;
     margin-top: 10px;
-    margin-left: 45px;
+    margin-left: 40px;
   }
 
   .banner-nav-tab {
@@ -436,7 +488,7 @@ footer > p {
 
 @media all and (max-width: 465px) {
   .nav-box {
-    margin-left: 5px;
+    margin-left: 0px;
   }
 
   .banner-nav-tab {
@@ -444,6 +496,6 @@ footer > p {
   }
 
   header {
-    margin-left: 10px;
+    margin-left: 35px;
   }
 }
