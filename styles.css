@@ -50,7 +50,7 @@ header {
 
 .nav-box {
   display: inline-block;
-  margin-left: 5%;
+  margin-left: 4%;
 }
 
 .banner-nav-tab {
@@ -128,9 +128,11 @@ header {
 .home-page-nav {
   width: 65%;
   min-width: 900px;
+  max-width: 1200px;
   margin: auto;
   margin-top: 50px;
   text-align: justify;
+  padding: 0px;
 }
 
 .spacer {
@@ -143,13 +145,22 @@ header {
 .home-page-nav-button {
   height: 100px;
   width: 250px;
-  padding-top: 20px;
+  display: block;
   text-align: center;
   vertical-align: top;
+  margin: auto;
+}
+
+.home-page-nav-button a {
+  display: block;
+  height: 100%;
+  width: 100%;
   margin: 0;
+  padding: 0;
 }
 
 .home-page-nav-button h2 {
+  padding-top: 15px;
   font-family: 'Raleway', sans-serif;
   margin-bottom: 10px;
 }
@@ -160,7 +171,7 @@ header {
   transition: color .2s;
 }
 
-.home-page-nav-button p:hover {
+.home-page-nav-button:hover p {
   color: white;
 }
 
