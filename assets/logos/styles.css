@@ -1,0 +1,95 @@
+#python {
+  height: 500px;
+  position: absolute;
+  top: 330px;
+  left: 190px;
+}
+
+#js {
+  height: 500px;
+  position: absolute;
+  top: 180px;
+  left: -100px;
+}
+
+#css {
+  height: 500px;
+  position: absolute;
+  top: 10px;
+  left: 250px;
+}
+
+#html {
+  height: 500px;
+  position: absolute;
+  top: 220px;
+  left: 540px;
+}
+
+#angular {
+  height: 500px;
+  position: absolute;
+  top: 40px;
+  left: 1090px;
+}
+
+#postgres {
+  height: 500px;
+  position: absolute;
+  top: 0px;
+  left: 800px;
+  z-index: 10;
+}
+
+#js2 {
+  height: 500px;
+  position: absolute;
+  top: 330px;
+  left: 880px;
+}
+
+#css2 {
+  height: 500px;
+  position: absolute;
+  top: 270px;
+  left: 1190px;
+  z-index: -2;
+}
+
+#postgres2 {
+  height: 500px;
+  position: absolute;
+  top: 500px;
+  left: -70px;
+  z-index: 0;
+}
+
+#python2 {
+  height: 500px;
+  position: absolute;
+  top: -180px;
+  left: 480px;
+}
+
+#angular2 {
+  height: 500px;
+  position: absolute;
+  top: -140px;
+  left: -90px;
+}
+
+#html2 {
+  height: 500px;
+  position: absolute;
+  top: -170px;
+  left: 1100px;
+  z-index: -1;
+}
+
+#angular3 {
+  height: 500px;
+  position: absolute;
+  top: 540px;
+  left: 570px;
+  z-index: -1;
+}

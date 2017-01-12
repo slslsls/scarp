@@ -85,10 +85,12 @@ header {
   margin: 0;
   padding: 60px;
   padding-top: 130px;
+  background: url('./assets/images/welcome-bg.png');
 }
 
 .welcome-frame {
   width: 55%;
+  min-width: 700px;
   margin: auto;
   padding: 40px 10px;
   padding-bottom: 60px;
@@ -104,6 +106,10 @@ header {
   padding-bottom: 40px;
   border-top: 1px solid lightgray;
   border-bottom: 1px solid lightgray;
+}
+
+.welcome-section p {
+  line-height: 1.7rem;
 }
 
 .opening {
@@ -422,7 +428,7 @@ footer > p {
   }
 }
 
-@media all and (max-width: 520px) {
+@media all and (max-width: 670px) {
   .svg-box {
     display: none;
   }
