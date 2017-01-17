@@ -15,11 +15,12 @@ p {
 }
 
 #home-page {
-  height: 1000px;
+  height: 800px;
 }
 
 #about-page {
   height: 1000px;
+  padding-top: 100px;
 }
 
 #projects-page {
@@ -122,7 +123,12 @@ header {
 
 .welcome-section p {
   line-height: 1.7rem;
-  letter-spacing: .5px;
+}
+
+.home-page-nav-bg {
+  height: 200px;
+  width: 100%;
+  padding-top: 50px;
 }
 
 .home-page-nav {
@@ -130,7 +136,7 @@ header {
   min-width: 900px;
   max-width: 1200px;
   margin: auto;
-  margin-top: 50px;
+  /*margin-top: 60px;*/
   text-align: justify;
   padding: 0px;
 }
@@ -149,6 +155,8 @@ header {
   text-align: center;
   vertical-align: top;
   margin: auto;
+  transition: background .2s ease;
+  background-color: #00223D;
 }
 
 .home-page-nav-button a {
@@ -162,13 +170,18 @@ header {
 .home-page-nav-button h2 {
   padding-top: 15px;
   font-family: 'Raleway', sans-serif;
+  letter-spacing: 2px;
   margin-bottom: 10px;
+  transition: color .2s;
 }
 
 .home-page-nav-button p {
   letter-spacing: .5px;
   color: gray;
   transition: color .2s;
+  font-family: 'Open Sans Condensed', sans-serif;
+  letter-spacing: 1px;
+  font-size: 1.2rem;
 }
 
 .home-page-nav-button:hover p {
@@ -193,7 +206,7 @@ header {
   width: 65%;
   margin: auto;
   margin-top: 30px;
-  padding-top: 40px;
+  padding-top: 70px;
   padding-bottom: 40px;
   border-bottom: 1px solid lightgray;
   min-width: 500px;
@@ -201,9 +214,18 @@ header {
 
 .about-section img {
   width: 15%;
-  border-radius: 3px;
   float:left;
   margin-right: 15px;
+}
+
+.about-section h1 {
+  border-bottom: 1px solid lightgray;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.about-section p {
+  padding-top: 30px;
 }
 
 .link, .link:hover, .link:visited {
@@ -462,6 +484,10 @@ footer > p {
 @media all and (max-width: 1130px) {
   .banner {
     height: 120px;
+  }
+
+  .about-section {
+    padding-top: 120px;
   }
 
   .welcome-background {

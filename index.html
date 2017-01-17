@@ -8,6 +8,18 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
     <script src="https://code.jquery.com/jquery-3.1.1.js" integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA=" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://github.com/kswedberg/jquery-smooth-scroll/blob/master/jquery.smooth-scroll.min.js"></script>
+    <script>
+      $('.smooth').on('click', function() {
+          $.smoothScroll({
+              scrollElement: $('body'),
+              scrollTarget: '#' + this.id
+          });
+
+          return false;
+      });
+</script>
   </head>
   <body>
     <div class="banner bg3">
@@ -44,46 +56,50 @@
         </div>
       </div>
     </div>
-    <div id="home-page">
-      <div class="welcome-background">
-        <div class="welcome-frame">
-          <h1 class="heading text2">Welcome</h1>
-          <div class="welcome-section">
-            <p>
-              <strong class="opening text3">I'm a full-stack web developer</strong> with experience in JavaScript, NodeJS, AngularJS, CSS, C#, and SQL. I love learning, working as part of a team, and thinking creatively to solve problems and build things.
-            </p>
+
+      <div id="home-page" class="smooth">
+        <div class="welcome-background">
+          <div class="welcome-frame">
+            <h1 class="heading text3">Welcome</h1>
+            <div class="welcome-section">
+              <p>
+                <strong class="opening text2">I'm a full-stack web developer</strong> with experience in JavaScript, NodeJS, AngularJS, CSS, C#, and SQL. I love learning, working as part of a team, and thinking creatively to solve problems and build things.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="home-page-nav-bg">
+          <div class="home-page-nav">
+            <div class="spacer">
+              <div class="home-page-nav-button">
+                <a href="#about-page">
+                  <h2 class="text2">About</h2>
+                  <p>Background & resume</p>
+                </a>
+              </div>
+            </div>
+            <div class="spacer">
+              <div class="home-page-nav-button">
+                <a href="#projects-page">
+                  <h2 class="text2">Projects</h2>
+                  <p>Descriptions & screenshots</p>
+                </a>
+              </div>
+            </div>
+            <div class="spacer">
+              <div class="home-page-nav-button">
+                <a href="#contact-page">
+                  <h2 class="text2">Contact</h2>
+                  <p>Get in touch!</p>
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-      <div class="home-page-nav">
-        <div class="spacer">
-          <div class="home-page-nav-button bg3">
-            <a href="#about-page">
-              <h2 class="text2">About</h2>
-              <p>Background & resume</p>
-            </a>
-          </div>
-        </div>
-        <div class="spacer">
-          <div class="home-page-nav-button bg3">
-            <a href="#projects-page">
-              <h2 class="text2">Projects</h2>
-              <p>Descriptions & screenshots</p>
-            </a>
-          </div>
-        </div>
-        <div class="spacer">
-          <div class="home-page-nav-button bg3">
-            <a href="#contact-page">
-              <h2 class="text2">Contact</h2>
-              <p>Get in touch!</p>
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div id="about-page" class="about-section">
-      <h1 class="heading text2">About Me</h1>
+    <a id="about-page" class="smooth"></a>
+    <div class="about-section">
+      <h1 class="heading text3">About</h1>
       <p>
         <img src="./assets/images/profile-pic.png" alt="profile picture">
         I started coding in 2015 and was immediately hooked. I really enjoy the combination of creativity and logic needed to solve problems and build things in the world of software and web development. In February 2016 I began a six-month coding bootcamp, focusing on full-stack development with mostly JavaScript-based technologies like Node.js and Angular. It was extremely challenging, a lot of fun, and served as a confirmation that this is what I want to spend my time doing. Near the end of the program I was accepted into Microsoft's LEAP internship program, which exposed me to the .NET Framework, Visual Studio, and backend data-processing on a large scale. Since then I've been taking online courses to improve my skills, and working on personal projects for fun.
@@ -92,6 +108,125 @@
         Outside of programming I have a wide range of interests including music composition, economics, astronomy, and linguistics. I recently started volunteering for a non-profit called <a href="http://kilowattsforhumanity.org/kwh/" target="_blank">Kilowatts for Humanity</a>, which works with developing communities to plan and implement off-grid electrical solutions. I'll be working with their dev team to plan and write software for Raspberry Pi data loggers in the field, and to maintain and improve their website.
       </p>
     </div>
+
+    <div class="container">
+      <div class="resume">
+        <h2 class="text2">Skills</h2>
+        <section class="skills-col">
+          <ul>
+            <li>JavaScript</li>
+            <li>Node.js</li>
+            <li>Angular</li>
+            <li>Express.js</li>
+          </ul>
+        </section>
+        <section class="skills-col">
+          <ul>
+            <li>jQuery</li>
+            <li>AJAX</li>
+            <li>HTML, CSS</li>
+            <li>SQL, PostgreSQL, Knex</li>
+          </ul>
+        </section>
+        <section class="skills-col">
+          <ul>
+            <li>C#</li>
+            <li>Object-oriented programming</li>
+            <li>Agile workflow</li>
+            <li>Pair programming</li>
+          </ul>
+        </section>
+        <h2 class="text2">Experience</h2>
+        <h4>KiloWatts for Humanity<span class="regular-text"> | <i>Software Development Volunteer</i> | Seattle, WA | October 2016 - Present</span></h4>
+        <ul>
+          <li>Migrate database to TICK stack on new Ubuntu server</li>
+          <li>Maintain/improve website</li>
+          <li>Plan network solutions for Raspberry Pi data loggers</li>
+        </ul>
+        <h4>Microsoft<span class="regular-text"> | <i>Software Development Intern</i> | Redmond, WA | June 2016 - October 2016</span></h4>
+        <ul>
+          <li>Utilized agile development to maintain and improve backend services for Xbox gaming telemetry</li>
+          <li>Designed and implemented functional tests for high-throughput applications</li>
+          <li>Streamlined a suite of learning materials for future interns and third-world programming academies</li>
+          <li>Learned technologies such as C#, Azure Event Hubs, and Linux virtual machines</li>
+        </ul>
+        <h4>Galvanize<span class="regular-text"> | <i>Full-Stack Web Development Student</i> | Seattle, WA | February 2016 - June 2016</span></h4>
+        <ul>
+          <li>
+            Twitter Sentiment Analysis
+            <ul>
+              <li>Worked on a team of four to build and deploy an Express CRUD application</li>
+              <li>Built RESTful routes using Knex to access PostgreSQL database and render HTML with
+                Jade templates</li>
+            </ul>
+          </li>
+          <li>
+            <i>SommBuddy</i> Wine-Pairing Mobile Application
+            <ul>
+              <li>Worked on a team of four to design and build a mobile application for pairing wine with food</li>
+              <li>Built a backend reverse proxy, calling wine.com API with request-promise, then restructuring before sending JSON response to client</li>
+              <li>Implemented a web crawler to get image urls</li>
+            </ul>
+          </li>
+          <li>
+            Text Converter
+            <ul>
+              <li>Structured and styled a front-end application to convert text into synonyms</li>
+              <li>Used AJAX to call thesaurus API, based on front-end word-parsing logic</li>
+            </ul>
+          </li>
+          <li>
+            Angular Shopping Cart
+            <ul>
+              <li>Used Angular to build front-end shopping cart application</li>
+            </ul>
+          </li>
+        </ul>
+        <h4>Wells Fargo<span class="regular-text"> | <i>Financial Analyst</i> | Spokane, WA and Seattle, WA | January 2013 - December 2015</span></h4>
+        <ul>
+          <li>Advised business clients on cash flow management, information reporting, and fraud protection</li>
+          <li>Assisted two investment managers with portfolio allocation and rebalancing</li>
+        </ul>
+        <h4>Hypergiant Media<span class="regular-text"> | <i>Composer</i> | Seattle, WA | April 2011 - June 2012</span></h4>
+        <ul>
+          <li>Started a music publishing business focused on music for productions</li>
+          <li>Composed music for advertisements, television, film, and various licensing opportunities</li>
+        </ul>
+        <h2 class="text2">Education</h2>
+        <h4>University of Washington<span class="regular-text"> | Seattle, WA | Graduated December 2010</span></h4>
+        <h4><span class="regular-text"><i>Bachelor of Arts in Business Administration, specializing in finance and economics</i></span></h4>
+      </div>
+    </div>
+
+    <div class="projects-intro text3">
+      <!-- <p>A few projects demonstrating some use of different languages and libraries...</p> -->
+    </div>
+
+    <div class="projects-container">
+
+      <div id="project-twitter-sa" class="project"></div>
+
+      <div id="project-in-other-words" class="project"></div>
+
+      <div id="project-angular-shopping-cart" class="project"></div>
+
+      <div id="project-sommbuddy" class="project"></div>
+
+      <div id="project-8k-crawler" class="project"></div>
+
+      <div id="project-scarp" class="project"></div>
+
+    </div>
+
+    <div class="contact-info text3">
+      <form class="" action="https://formspree.io/spencerscarpelli@gmail.com" method="post">
+        <input class="input-field" type="text" name="name" placeholder="Name">
+        <input class="input-field" type="email" name="_replyto" placeholder="Email">
+        <textarea class="input-message" name="message" rows="8" cols="80" placeholder="Message"></textarea>
+        <input class="button" type="submit" value="Send">
+      </form>
+    </div>
+
     <footer class="footer">
       <p>Copyright &copy; <span id="current-year"></span> Spencer Scarpelli</p>
       <p>
